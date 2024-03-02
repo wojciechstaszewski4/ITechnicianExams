@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="PL-pl">
+    
+<head>
+
+    <meta charset="UTF-8"/>
+    <meta name="description" content="Portal poświęcony rozwiązywaniu wszelakich działań matematycznych. Wejdź i sam przetestuj!"/>
+    <meta name="keywords" content="pomocnik, matematyczny"/>
+    <meta name="author" content="Wojtek"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Pomocnik Matematyczny</title>
+    <meta http-equiv="X-UE-Compatible" content="IE=edge,chrome=1"/>
+    <meta http-equiv="Content-Type" content="text/html"/>
+    <link rel="stylesheet" href="styl.css" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css?family=Rubik:400,700&display=swap&subset=latin-ext" rel="stylesheet"/>
+    <script>
+
+		function Dzialanie(co, a, b)
+        {
+		    window.alert(co + a + b);
+		    var out = 0;
+
+			switch(co)
+            {
+				case 1:
+					out = parseInt(a, 10) + parseInt(b, 10);
+					document.getElementById("Wynik").innerHTML = "Wynik: " +out;
+					break;
+
+				case 2:
+					out = parseInt(a, 10) - parseInt(b, 10);
+					document.getElementById("Wynik").innerHTML = "Wynik: " +out;
+					break;
+
+				case 3:
+					out = parseInt(a, 10) * parseInt(b, 10);
+					document.getElementById("Wynik").innerHTML = "Wynik: " +out;
+					break;
+
+				case 4:
+					out = parseInt(a, 10) / parseInt(b, 10);
+					document.getElementById("Wynik").innerHTML = "Wynik: " +out;
+					break;
+
+				case 5:
+					out = Math.pow(parseInt(a, 10), parseInt(b, 10));
+					document.getElementById("Wynik").innerHTML = "Wynik: " +out;
+					break;
+			}
+		}
+
+	 </script>
+
+</head>
+
+<body>
+
+	<div id="Gorny">
+
+		<div id="BG">
+			<img src="logo.jpg" alt="Matematyka"/>
+		</div>
+
+		<div id="BGN">
+			<h1>Pomocnik Matematyczny</h1>
+		</div>
+
+		<div id="BG">
+			<a href="dzialania.html"><h4>Działania</h4></a>
+		</div>
+
+		<div id="BG">
+			<a href="mnozenie.html"><h4>Tabliczka Mnożenia</h4></a>
+		</div>
+
+	</div>
+
+	<div>
+
+		<div id="Lewy">
+			<h3>Proste Działania</h3>
+
+			<p>Liczba A: <input style="color: orange;" id="INPTA" type="number"/></p>
+			<p>Liczba B: <input style="color: orange;" id="INPTB" type="number"/></p>
+
+			<button onclick="Dzialanie(1, document.getElementById('INPTA').value, document.getElementById('INPTB').value)" id="BTN">+</button>
+			<button onclick="Dzialanie(2, document.getElementById('INPTA').value, document.getElementById('INPTB').value)" id="BTN">-</button>
+			<button onclick="Dzialanie(3, document.getElementById('INPTA').value, document.getElementById('INPTB').value)" id="BTN">*</button>
+			<button onclick="Dzialanie(4, document.getElementById('INPTA').value, document.getElementById('INPTB').value)" id="BTN">/</button>
+			<button onclick="Dzialanie(5, document.getElementById('INPTA').value, document.getElementById('INPTB').value)" id="BTN">A^B</button>
+
+			<p id="Wynik"></p>
+		</div>
+
+		<div id="Prawy">
+			<ul>
+				<li>Dodawanie,</li>
+				<li>Odejmowanie,</li>
+				<li>Mnożenie,</li>
+				<li>Dzielenie,</li>
+				<li>Potęgowanie.</li>
+			</ul>
+		</div>
+
+	</div>
+
+	<div id="FTR">
+		<p>Autor: 02200000000</p>
+	</div>
+
+</body>
+
+</html>

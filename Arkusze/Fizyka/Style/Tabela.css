@@ -1,0 +1,13 @@
+    table
+    {
+        margin: auto;
+        border: 1px solid #DAC50F;
+    }
+
+    th, td
+    {
+        padding: 5px 10px;
+        text-align: center;
+        font-size: 16px;
+        color: #D10CEB;
+    }

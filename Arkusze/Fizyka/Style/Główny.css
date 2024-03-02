@@ -1,0 +1,63 @@
+@keyframes aside1
+    {
+        from {left: -500px;}
+        to {left: 0px;}
+    }
+
+    body
+    {
+        margin: auto;
+        width: 1000px;
+        color: #FF0000;
+        background-color: #797979;
+        font-size: 20px;
+    }
+
+    header
+    {
+        background-color: #000000;
+    }
+
+    main
+    {
+        background: linear-gradient(90deg, #000000, #FFFFFF, #000000);
+    }
+
+    nav, main
+    {
+        float: left;
+        min-height: 300px;
+        padding: 25px;
+    }
+
+    nav
+    {
+        width: 200px;
+    }
+
+    main
+    {
+        width: 700px;
+        text-align: center;
+    }
+
+    aside, footer
+    {
+        text-align: right;
+    }
+
+    aside span
+    {
+        position: relative;
+        animation: aside1 10s alternate infinite;
+    }
+
+    footer
+    {
+        clear: left;
+    }
+
+    a
+    {
+        color: #FF0000;
+    }

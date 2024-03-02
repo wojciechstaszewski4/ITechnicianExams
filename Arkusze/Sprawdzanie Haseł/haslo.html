@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="PL-pl">
+    
+<head>
+
+    <meta charset="UTF-8"/>
+    <meta name="description" content="To jest Świetny Miernik Jakości Hasła!"/>
+    <meta name="keywords" content="miernik, jakości, hasła"/>
+    <meta name="author" content="Wojtek"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Miernik Jakości Hasła</title>
+    <meta http-equiv="X-UE-Compatible" content="IE=edge,chrome=1"/>
+    <meta http-equiv="Content-Type" content="text/html"/>
+    <link rel="stylesheet" href="styl.css" type="text/css"/>
+
+</head>
+
+<body>
+
+    <header>
+        <h1><a href="index.html">Sprawdź Swoje Hasło</a></h1>
+    </header>
+
+    <nav>
+        <h2>Wybierz</h2>
+
+        <ol>
+            <li><a href="haslo.html">Sprawdź Hasło</a></li>
+            <li><a href="zasady.html">Zasady Tworzenia Hasła</a></li>
+        </ol>
+    </nav>
+
+    <main>
+        <p>Twoje Hasło
+            <input type="password" id="input1">
+            <input type="button" value="Sprawdź" onclick="f()">
+        </p>
+
+        <p id="p1"></p>
+    </main>
+
+    <footer>
+        <h3>Miernik Jakości Hasła</h3>
+        <p>Stronę Opracował: 02200000000</p>
+    </footer>
+
+    <script>
+
+        function f()
+        {
+            var x = input1.value
+
+                if(x == "")
+                {
+                    p1.style.color="red"
+                    p1.innerHTML="Wpisz Hasło!"
+                }
+
+                else if(x.search("[0-9]") >= 0 && x.length > 6)
+                {
+                    p1.style.color="green"
+                    p1.innerHTML="Dobre!"        
+                }
+
+                else if(x.search("[0-9]") >= 0 && x.length >= 4 && x.length <= 6)
+                {
+                    p1.style.color="blue"
+                    p1.innerHTML="Średnie!"       
+                }
+
+                else
+                {
+                    p1.style.color="yellow"
+                    p1.innerHTML="Słabe!"
+                }
+        }
+
+    </script>  
+
+</body>
+
+</html>

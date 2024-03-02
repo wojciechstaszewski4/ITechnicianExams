@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="PL-pl">
+    
+<head>
+
+    <meta charset="UTF-8"/>
+    <meta name="description" content="Portal poświęcony rozwiązywaniu wszelakich działań matematycznych. Wejdź i sam przetestuj!"/>
+    <meta name="keywords" content="działania, matematyczne, działania matematyczne, rozwiązanie, zadania, matematyka, kalkulator, przelicznik, narzędzie, proste, dodawanie, odejmowanie, mnożenie, dzielenie, potęgowanie"/>
+    <meta name="author" content="Wojtek"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Proste Działania</title>
+    <meta http-equiv="X-UE-Compatible" content="IE=edge,chrome=1"/>
+    <meta http-equiv="Content-Type" content="text/html"/>
+    <link rel="stylesheet" href="Style.css" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css?family=Rubik:400,700&display=swap&subset=latin-ext" rel="stylesheet"/>
+    
+</head>
+
+<body>
+
+    <header>
+        <a href="Index.html"><img src="Baner.jpg" alt="Baner"></a>
+    </header>
+
+    <nav>
+        <a href="Strona1.html"> - Proste Działania</a>
+        <a href="Strona2.php"> - Potęgowanie</a>
+    </nav>
+
+    <main>
+        <h1>Proste Działania</h1>
+
+        <p><i>Podaj Pierwszą Liczbę: </i>
+        <input type="number" id="i1"/></p>
+        <p><i>Podaj Drugą Liczbę: </i>
+        <input type="number" id="i2"/></p>
+
+        <p>
+        <button onclick="f(1)">Dodawanie</button>
+        <button onclick="f(2)">Odejmowanie</button>
+        <button onclick="f(3)">Mnożenie</button>
+        <button onclick="f(4)">Dzielenie</button>
+        </p>
+
+        <output id="o1"></output>
+    </main>
+
+    <script>
+        function f(x) 
+        {
+        var a = parseInt(i1.value)
+        var b = parseInt(i2.value)
+        var w
+	
+        if (isNaN(a) || isNaN(b))
+            {
+                w = "Proszę Uzupełnić Obie Liczby!"
+            }
+		
+        else if (x == 4 && b == 0)
+            {
+                w = "Nie Wolno Dzielić Przez Zero!"
+            }
+
+        else
+            { 
+                if (x == 1) w = a+b
+                else if(x == 2) w = a-b
+                else if(x == 3) w = a*b
+                else if(x == 4 && b != 0) w = a/b
+                w = "Wynik Działania Wynosi: " + w
+            }
+
+        o1.value = w
+        } 
+    </script>
+
+</body>
+
+</html> 

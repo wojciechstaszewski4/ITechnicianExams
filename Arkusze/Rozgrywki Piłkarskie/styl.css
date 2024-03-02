@@ -1,0 +1,65 @@
+body
+{
+    font-family: Tahoma, sans-serif;
+    background-color: Crimson;
+}
+
+#banner1
+{
+    color: #FFFFFF;
+    text-align: center;
+    height: 370px;
+}
+
+#mecze
+{
+    color: #FFFFFF;
+    text-align: center;
+}
+
+#main
+{
+    background-color: WhiteSmoke;
+    height: 50px;
+    clear: both;
+}
+
+#lewy
+{
+    background-color: WhiteSmoke;
+    width: 70%;
+    height: 230px;
+    float: left;
+}
+
+#prawy
+{
+    background-color: WhiteSmoke;
+    width: 30%;
+    height: 230px;
+    text-align: right;
+    float: left;
+}
+
+h2
+{
+    text-align: center;
+    letter-spacing: 7px;
+    text-transform: capitalize;
+}
+
+.option
+{
+    color: #FFFFFF;
+    float: left;
+    text-align: center;
+    width: 200px;
+    margin: 10px;
+    border: 1px solid #000000;
+    border-radius: 10px;
+}
+
+.option:hover
+{
+    border: 1px solid #FFFFFF;
+}

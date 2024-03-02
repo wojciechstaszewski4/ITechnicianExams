@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="PL-pl">
+    
+<head>
+
+    <meta charset="UTF-8"/>
+    <meta name="description" content="Strona poświęcona ciągom liczbowym. Możesz tutaj wygenerować wyrazy twojego ciągu arytmetycznego!"/>
+    <meta name="keywords" content="ciągi, liczbowe, arytmetyczny, wyrazy, fibonacci, geometryczny, generowanie"/>
+    <meta name="author" content="Wojtek"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Ciągi Liczbowe</title>
+    <meta http-equiv="X-UE-Compatible" content="IE=edge,chrome=1"/> 
+    <meta http-equiv="Content-Type" content="text/html"/>
+    <link rel="stylesheet" href="styl2.css" type="text/css"/>
+	<script>
+	function Ciag(A1, R, N)
+    {
+		A1 = parseInt(A1);
+		R = parseInt(R);
+		N = parseInt(N);
+
+		var Sout = "Ciąg Arytmetyczny Zawiera Wyrazy: ";
+		var out;
+		window.alert(A1 + R + N);
+
+		for (i = 0; i < N + 1; i++)
+        {
+			out = A1 + i * R;
+		    Sout += ", " + out;
+		}
+
+		window.alert(Sout);
+		document.getElementById("Output").innerHTML = Sout;
+	}
+	</script>
+
+</head>
+
+<body>
+
+	<div>
+		<div id="nav1">
+			<h2>Poznaj Ciągi Liczbowe!</h2>
+		</div>
+
+		<div id="nav2">
+			<a href="liczby.html"><h5>Ciągi Arytmetyczne</h5></a>
+		</div>
+
+		<div id="nav3">
+			<a href="fib.html"><h5>Ciąg Fibonacciego</h5></a>
+		</div>
+
+		<div id="nav4">
+			<img src="obraz1.png" alt="Fibonacci"/>
+		</div>
+	</div>
+	
+    <div style="clear: both;"></div>
+
+	<div>
+		<div id="left">
+			<ol style="padding-left: 150px; padding-top: 140px;">
+				<li>Ciągi Arytmetyczne,</li>
+				<li>Ciągi Geometryczne,</li>
+				<li>Ciąg Fibonacciego.</li>
+			</ol>
+		</div>
+
+		<div id="right">
+			<h2 style="padding-top: 70px;">Generowanie Ciągu Arytmetycznego!</h2>
+
+			<text style="display: block;">Pierwszy Wyraz A1: <input style="display: inline;"id="A1INPT" type="number"/></text>
+			<text style="display: block;">Różnica Ciągu R: <input style="display: inline;"id="RINPT" type="number"/></text>
+			<text style="display: block;">Liczba Wyrazów w Ciągu N: <input id="NINPT" type="number"/></text>
+
+			<button onclick="Ciag(document.getElementById('A1INPT').value,document.getElementById('RINPT').value,document.getElementById('NINPT').value)" style="font-weight: bold;">Generuj Ciąg</button>
+
+			<p id="Output"></p>
+		</div>
+	</div>
+
+	<div style="clear: both;"></div>
+
+	<div id="footer">
+		<p>Autor: 02200000000</p>
+	</div>
+
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+	body 
+	{
+		margin: auto;
+		font-family: Helvetica;
+	}
+	
+	#Bl, #L
+	{
+		background-color: rgb(130,69,85);
+		color: #ffffff;
+		width: 30%;
+		height: 200px;
+		text-align: center;
+		float: left;
+	}
+	
+	#Bp, #P
+	{
+		background-color: rgb(130,69,85);
+		color: #ffffff;
+		width: 70%;
+		height: 200px;
+		text-align: center;
+		float: left;
+		line-height: 350px;
+		vertical-align: middle;
+	}
+	
+	#Gl, footer
+	{
+		background-color: rgb(240,234,226);
+		padding: 120px;
+	}
+	
+	table, td
+	{
+		border: 1px solid rgb(130,69,85);
+		color: rgb(130,69,85);
+		padding: 10px;
+
+	}
+	
+	a 
+	{
+		color: rgb(240,234,226);
+	}
