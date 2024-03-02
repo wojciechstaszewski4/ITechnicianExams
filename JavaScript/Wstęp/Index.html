@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="PL-pl">
+    
+<head>
+
+    <meta charset="UTF-8"/>
+    <meta name="description" content="Portal Wstępu dla JavaScript!"/>
+    <meta name="keywords" content="java, javascript, skrypt, programowanie, kod"/>
+    <meta name="author" content="Wojtek"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Wstęp do JavaScript</title>
+    <meta http-equiv="X-UE-Compatible" content="IE=edge,chrome=1"/>
+    <meta http-equiv="Content-Type" content="text/html"/>
+	
+    <script>
+        alert ("Witaj Świecie I")
+    </script>
+
+</head>
+
+<body>
+
+    <script>
+        document.write ("Witaj Świecie II")
+    </script>
+
+    <script src="Skrypt.js"></script>   
+
+    <button onclick = "alert('Witaj!'); alert('Świecie IV')">Kliknij</button>
+
+    <input type = "text" value = "Test1" id = "Input1"/>
+
+    <script>
+        document.write (Input1.value)
+        Input1.value = Test2
+    </script>
+
+    <p id = "P1">
+        Test2
+    </p>
+
+    <script>
+        alert (P1.innerHTML)
+        P1.innerHTML = prompt("Wpisz Tekst")
+    </script>
+        
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="PL-pl">
+    
+<head>
+
+    <meta charset="UTF-8"/>
+    <meta name="description" content="Zadanie - Liczby Całkowite z Zakresu"/>
+    <meta name="keywords" content="java, javascript, skrypt, programowanie, kod, instrukcje, warunkowe, zadanie, liczby, całkowite, z, zakresu"/>
+    <meta name="author" content="Wojtek"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Zadanie - Liczby Całkowite z Zakresu</title>
+    <meta http-equiv="X-UE-Compatible" content="IE=edge,chrome=1"/>
+    <meta http-equiv="Content-Type" content="text/html"/>
+
+</head>
+
+<body>
+
+    <script>
+        var x = parseInt(prompt("Podaj Liczbę Początkową"))
+        var y = parseInt(prompt("Podaj Liczbę Końcową"))
+        var w = ""
+
+        for(i = x; i <= y; i++)
+        {
+            w += i + ", "
+        }
+
+        for(i = x; i >= y; i--)
+        {
+            w += i + ", "
+        }
+
+        alert(w)
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="PL-pl">
+    
+<head>
+
+    <meta charset="UTF-8"/>
+    <meta name="description" content="Witaj, To jest strona na której poznasz aktualną datę i godzinę!"/>
+    <meta name="keywords" content="data, czas, godzina, sekunda, dzień, miesiąc, rok, minuta"/>
+    <meta name="author" content="Wojtek"/>
+    <meta name="viewport" content="width=device-width"/>
+    <title>Data i Czas</title>
+    <meta http-equiv="X-UE-Compatible" content="IE=edge,chrome=1"/>
+    <meta http-equiv="Content-Type" content="text/html"/>
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,900&display=swap&subset=latin-ext" rel="stylesheet">
+    
+    <script type="text/javascript"> 
+
+        function pokazCzas()
+        {
+            var monthsArr = ["Stycznia", "Lutego", "Marca", "Kwietnia", "Maja", "Czerwca", "Lipca", "Sierpnia", "Września", "Października", "Listopada", "Grudnia"];
+
+            var daysArr = ["Niedziela", "Poniedziałek", "Wtorek", "Środa", "Czwartek", "Piątek", "Sobota"];
+
+            var dateObj = new Date();
+
+            var year = dateObj.getFullYear();
+            var month = dateObj.getMonth();
+            var numDay = dateObj.getDate();
+            var day = dateObj.getDay();
+            var hour = dateObj.getHours();
+            var minute = dateObj.getMinutes();
+            var second = dateObj.getSeconds();
+
+            if (minute < 10) minute = "0" + minute;
+
+            if (second < 10) second = "0" + second;
+
+            var output = daysArr[day] + ", " + numDay + " " + monthsArr[month] + " " + year + " Roku, Godzina " + hour + ":" + minute + ":" + second;
+
+            return output;
+        }
+
+        alert(pokazCzas());
+
+    </script> 
+    
+</head>
+
+<body>
+
+</body>
+</html>

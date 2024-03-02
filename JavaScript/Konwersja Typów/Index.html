@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="PL-pl">
+    
+<head>
+
+    <meta charset="UTF-8"/>
+    <meta name="description" content="Portal Konwersji Typów JavaScript!"/>
+    <meta name="keywords" content="java, javascript, skrypt, programowanie, kod, konwersja typów, konwersja, typów, typy"/>
+    <meta name="author" content="Wojtek"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Konwersja Typów</title>
+    <meta http-equiv="X-UE-Compatible" content="IE=edge,chrome=1"/>
+    <meta http-equiv="Content-Type" content="text/html"/>
+
+</head>
+
+<body>
+
+    <input type="text" value="1" id="input1"/>
+
+    <input type="number" value="1" id="input2"/>
+
+    <p id="P1">
+        1.5
+    </p>
+
+    <script>
+        document.write(typeof "1")
+    </script>
+
+    <script>
+        document.write(typeof ("1"*1))
+    </script>
+
+    <script>
+        document.write(typeof 1)
+    </script>
+
+    <script>
+        document.write(typeof (1+""))
+    </script>
+
+    <script>
+        document.write(typeof input1.value)
+    </script>
+
+    <script>
+        document.write(typeof (input1.value*1))
+    </script>
+
+    <script>
+        document.write(typeof input2.value)
+    </script>
+
+    <script>
+        document.write(typeof parseInt(input1.value))
+    </script>
+    
+    <script>
+        document.write(typeof P1.innerHTML)
+    </script>
+
+    <script>
+        document.write(typeof P1.innerHTML*1)
+    </script>
+
+    <script>
+        alert(typeof prompt("Wpisz Liczbę!"))
+    </script>
+
+    <script>
+        alert(typeof prompt("Wpisz Liczbę!")*1)
+    </script>
+
+</body>
+	
+</html>

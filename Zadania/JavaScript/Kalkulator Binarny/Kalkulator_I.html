@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="PL-pl">
+    
+<head>
+
+    <meta charset="UTF-8"/>
+    <meta name="description" content="Witaj, To jest strona na której przekonwertujesz swoją liczbę dziesiętną na binarną!"/>
+    <meta name="keywords" content="kalkulator, konwerter, system, binarny, dwójkowy, dziesiętny, całkowity, liczba, przelicznik"/>
+    <meta name="author" content="Wojtek"/>
+    <meta name="viewport" content="width=device-width"/>    
+    <title>Kalkulator Binarny</title>
+    <meta http-equiv="X-UE-Compatible" content="IE=edge,chrome=1"/>
+    <meta http-equiv="Content-Type" content="text/html"/>
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,900&display=swap&subset=latin-ext" rel="stylesheet">
+    
+    <script type="text/javascript"> 
+
+        function div(a, b)
+        {
+            return (Math.round(a/b - 0.5));
+        }
+
+        var x = prompt("Podaj Liczbę Całkowitą:");
+
+        w = 1;
+        i = 1;
+        a = new Array(30)
+
+        while (w!=0)
+        {
+            w = div(x, 2);
+            a[i] = (x % 2);
+            i = i + 1;
+            x = w;
+        }
+
+        for(j = i-1; j>0; j--)
+        document.write(a[j])
+
+    </script>
+
+</head>
+
+<body>
+
+</body>
+</html>

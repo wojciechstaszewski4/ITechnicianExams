@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="PL-pl">
+    
+<head>
+
+    <meta charset="UTF-8"/>
+    <meta name="description" content="Witaj, To jest strona na której wyznaczysz najniższą ze średnich ocen trzech uczniów!"/>
+    <meta name="keywords" content="przelicznik, kalkulator, konwerter, średnia, ocen, uczniowie, najniższa, wybór, wyznaczanie"/>
+    <meta name="author" content="Wojtek"/>
+    <meta name="viewport" content="width=device-width"/>    
+    <title>Wyznaczanie Najniższej ze Średnich!</title>
+    <meta http-equiv="X-UE-Compatible" content="IE=edge,chrome=1"/>
+    <meta http-equiv="Content-Type" content="text/html"/>
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,900&display=swap&subset=latin-ext" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <h3>Wyznaczanie Najniższej ze Średnich: </h3>
+
+    <ul>
+        <li>Polak <input type="number" id="sr1"></li>
+        <li>Nowak <input type="number" id="sr2"></li>
+        <li>Rysik <input type="number" id="sr3"></li>
+    </ul> 
+    
+    <br />
+
+    <input type="submit" value="Wyznacz" onclick="wyznacz()"> 
+    
+    <h3>Najniższa Średnia to: </h3><span id="wyn"></span>
+
+    <script>
+
+        function wyznacz()
+        {
+            var a = document.getElementById("sr1").value;
+            var b = document.getElementById("sr2").value;
+            var c = document.getElementById("sr3").value;
+
+            a = parseInt(a);
+            b = parseInt(b);
+            c = parseInt(c);
+
+            if (a<b && a<c)
+            {
+                document.getElementById("wyn").innerHTML=a
+            }
+
+            else document.getElementById("wyn").innerHTML=c;
+                if (b<c && b<a)
+                {
+                    document.getElementById("wyn").innerHTML=b
+                }
+
+                else document.getElementById("wyn").innerHTML=a;
+                    if (c<a && c<b)
+                    {
+                        document.getElementById("wyn").innerHTML=c
+                    }
+
+                    else document.getElementById("wyn").innerHTML=b;
+        }
+
+    </script>
+
+</body>
+</html>
