@@ -1,4 +1,4 @@
-## IT Technician Exams EE.09/E.14 ##
+## ITechnician Exams EE.09/E.14 ##
 
 Welcome to my site dedicated also to my repository. You will ask, why is this page there? Well, it was developed by me as part of easier access and search for the files we need. I think it's worth starting with what GitHub is and what it offers us.
 
